@@ -5,7 +5,7 @@
 
             return {
                 templateUrl: '<div></div>',
-                require: ['ngModel', '${3:name}']
+                require: ['ngModel', '${3:name}'],
                 restrict: 'AE',
                 scope: {},
 
