@@ -14,7 +14,7 @@
 
                 },
 
-                link: (scope, el, attrs, ctrls) {
+                link: function (scope, el, attrs, ctrls) {
                     var ngModel = ctrls[0];
                     var ctrl    = ctrls[1];
                 }
