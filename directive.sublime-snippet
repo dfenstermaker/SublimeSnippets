@@ -1,0 +1,29 @@
+<snippet>
+    <content><![CDATA[
+        directive('${1:name}', function () {
+
+            return {
+                templateUrl: '<div></div>',
+                require: ['ngModel', '${2:name}']
+                restrict: 'AE',
+                scope: {},
+
+                controllerAs: '${3:name}',
+                bindToController: true,
+                controller: function($scope) {
+
+                },
+
+                link: (scope, el, attrs, ctrls) {
+                    var ngModel = ctrls[0];
+                    var ctrl    = ctrls[1];
+                }
+            };
+
+        });
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>directive</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.js</scope> -->
+</snippet>
