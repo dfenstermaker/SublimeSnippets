@@ -1,14 +1,15 @@
 <snippet>
     <content><![CDATA[
-        directive('${1:name}', function () {
+    angular.module('${1:moduleName}')
+        .directive('${2:name}', function () {
 
             return {
                 templateUrl: '<div></div>',
-                require: ['ngModel', '${2:name}']
+                require: ['ngModel', '${3:name}']
                 restrict: 'AE',
                 scope: {},
 
-                controllerAs: '${3:name}',
+                controllerAs: '${4:name}',
                 bindToController: true,
                 controller: function($scope) {
 
